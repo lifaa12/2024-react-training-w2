@@ -86,6 +86,7 @@ function App() {
       document.cookie = "userToken=; expires=Thu, 01 Jan 1970 00:00:00 UTC;";
       delete axios.defaults.headers.common['Authorization'];
       setIsAuth(false);
+      setProductDetail({});
       setIsLoading(false);
     } catch (error) {
       Swal.fire({
